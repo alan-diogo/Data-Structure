@@ -80,7 +80,7 @@ int checkValue(const char letter)
   case 'ê':
     return 2;
   default:
-    return 0; // Se o caractere não estiver no mapeamento
+    return 0;
   }
 }
 
@@ -107,7 +107,7 @@ void ReadName()
       valueTokens[index] += checkValue(tokens[i]); // Soma os valores de cada letra do nome
     }
     tokens = strtok(NULL, " "); // passamos para o proximo token;
-    index++;                    // voce vai guardar o tamanho do vetor que eu quero; com base na quantidade de iteracao
+    index++;
   }
 }
 
